@@ -72,8 +72,8 @@ console.log(Bsearch(num,target));
 //3. Given years between 2000 and 2023, console all the leap years in the following
 // sentence, i.e “2020 is a leap year” if not console log i.e “2001 is not a leap year”
 for (let year =2000; year<=2023; year++){
-    // if (year%4==0 && (year % 100!==0 ||year%400==0))
-    if(year%4 ==0   ){
+     if (year%4==0 && (year % 100!==0 ||year%400==0)){
+    
         console.log(year+"is a leap year");
 
     }
@@ -112,33 +112,12 @@ console.log(multi(numArray));
 
 
 
-// 2
-function arrays(z){
-    console.log(z*4)
-}
-let numArra = [12, 87, 45, 75, 23, 64, 73];
-numArra.forEach(arrays)
-// 3
-function mama(bab){
-   
-    return bab.map(num3 =>num3 *4)
-}
-let x = [12, 87, 45, 75, 23, 64, 73];
-console.log(mama(x))
-
 // 6 Write a function that takes in an array of strings 
 // and returns an array with every element
 // turned into a number
 // let nums = [“10”,”24”,”45”,”56”,”67”]
-function data(ar){
-    let a =ar.map(Number)
-    console.log(a)
 
-}
-let num3 = ["10","24","45","56","67"]
-data(num3)
 
-// 2
 function tt(){
 
     return n.map(num=>+num)
@@ -146,15 +125,3 @@ function tt(){
 n= ["10","24","45","56","67"]
 console.log(tt(n))
 
-// leap year condition
-for (let year =2007; year<=2023; year++){
-    // if (year%4==0 && (year % 100!==0 ||year%400==0))
-    if(year%4==0||year%100==0||year%400==0)
-{
-        console.log(year+"is a leap year");
-
-    }
-    else{
-        console.log(year+"is not a leap year")
-    }
-}
